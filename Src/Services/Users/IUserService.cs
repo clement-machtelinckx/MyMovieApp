@@ -4,6 +4,7 @@ namespace MovieAppApi.Src.Services.Users;
 
 public interface IUserService
 {
-  ICollection<User> GetAllUsers();
+  ICollection<User> GetUsers(GetUsersInput input);
   double GetAverageAge();
+  User? GetUserById(int userId);
 }

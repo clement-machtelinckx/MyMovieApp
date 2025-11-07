@@ -5,8 +5,9 @@ using MovieAppApi.Src.Services.Env;
 using MovieAppApi.Src.Views.DTO.SearchMovies;
 using MovieAppApi.Src.Models.SearchMovies;
 
-namespace MovieAppApi.Controllers
-{
+namespace MovieAppApi.Src.Controllers;
+
+
     [ApiController]
     [Route("api/[controller]")]
     public class MoviesController : ControllerBase
@@ -51,4 +52,4 @@ namespace MovieAppApi.Controllers
             return Content(content, "application/json");
         }
     }
-}
+

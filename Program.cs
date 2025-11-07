@@ -3,6 +3,9 @@ using MovieAppApi.Src.Services.Env;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using MovieAppApi.Src.Services.Users;
+using MovieAppApi.Src.Repositories;
+
 
 namespace MovieAppApi;
 
@@ -20,6 +23,9 @@ public class Program
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
         builder.Services.AddHttpClient(); // important pour ton controller
+        
+        builder.Services.AddScoped<IUserRepository, UserRepository>();
+        builder.Services.AddScoped<IUserService, UserService>();
 
         var app = builder.Build();
 
