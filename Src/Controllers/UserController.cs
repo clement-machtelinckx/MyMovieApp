@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using MyWebAPI.Services;
+using MovieAppApi.Src.Services.Users;
 
-namespace MyWebAPI.Controllers;
+namespace MovieAppApi.Src.Controllers;
 
 [ApiController]
 [Route("[controller]")]

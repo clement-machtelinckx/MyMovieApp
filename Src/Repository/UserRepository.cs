@@ -1,7 +1,7 @@
-using MyWebAPI.Models;
-using MyWebAPI.Services;
+using MovieAppApi.Src.Models.Users;
+using MovieAppApi.Src.Services.Users;
 
-namespace MyWebAPI.Repositories;
+namespace MovieAppApi.Src.Repositories;
 
 public class UserRepository : IUserRepository
 {

@@ -9,12 +9,12 @@ namespace MovieAppApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class MovieController : ControllerBase
+    public class MoviesController : ControllerBase
     {
         private readonly HttpClient _httpClient;
         private readonly IEnvService _envService;
 
-        public MovieController(IHttpClientFactory httpClientFactory, IEnvService envService)
+        public MoviesController(IHttpClientFactory httpClientFactory, IEnvService envService)
         {
             _httpClient = httpClientFactory.CreateClient();
             _envService = envService;

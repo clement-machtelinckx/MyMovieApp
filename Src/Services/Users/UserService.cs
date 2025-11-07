@@ -1,5 +1,7 @@
-using MyWebAPI.Models;
-using MyWebAPI.Services;
+using MovieAppApi.Src.Models.Users;
+using MovieAppApi.Src.Services;
+
+namespace MovieAppApi.Src.Services.Users;
 
 public class UserService : IUserService
 {

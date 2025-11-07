@@ -1,6 +1,6 @@
-using MyWebAPI.Models;
+using MovieAppApi.Src.Models.Users;
 
-namespace MyWebAPI.Services.User;
+namespace MovieAppApi.Src.Services.Users;
 
 public interface IUserService
 {
